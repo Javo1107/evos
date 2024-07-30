@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+
+<h1>Welcome to Menu page</h1>
+
+<p>Hey this is menu page</p>
+<a href="{{ url_for('details') }}">Details</a>
+<a href="{{ url_for('index') }}">Index</a>
+<div>
+    <img src="/static/lavash.jpg" alt="No image" class="img">
+    <br>
+    <button class="btn" id="btnLav">Lavashes</button>
+</div>
+<div>
+    <img src="/static/burgers.jpg" alt="No image" class="img">
+    <br>
+    <button class="btn" id="btnLav">Burgers</button>
+</div>
+<div>
+    <img src="/static/drinks.jpg" alt="No image" class="img">
+    <br>
+    <button class="btn" id="btnLav">Drinks</button>
+</div>
+<div>
+    <img src="/static/deserts.jpg" alt="No image" class="img">
+    <br>
+    <button class="btn" id="btnLav">Deserts</button>
+</div>
+{% endblock %}
